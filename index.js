@@ -98,7 +98,7 @@ bot.onText(/\/clear/, (msg) => {
         bot.removeListener('message', contractMessageHandler);
         bot.sendMessage(msg.chat.id, "Cleared.");
     } catch (error) {
-        cpnsole.log(error.message);
+        console.log(error.message);
     }
 });
 
